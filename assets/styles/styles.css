@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+}
+
+h1, h2, h3 {
+  font-family: "Libre Caslon Display", serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #d6d4d4;
+  height: 15vh;
+}
+header h1 {
+  font-family: "Libre Caslon Display", serif;
+  margin: 0.5rem 0;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  gap: 6rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  margin: 0.5rem 0;
+}
+header nav ul li:nth-of-type(3) {
+  border-bottom: 1px solid;
+}
+header nav ul a {
+  text-decoration: none;
+  color: unset;
+}
+
+.main {
+  margin: 0 10%;
+}
+.main-subscriptions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-subscriptions h2 {
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-weight: 100;
+}
+.main-subscriptions p {
+  text-align: center;
+  width: 60%;
+}
+.main-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-options h3 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.main-options .options-article {
+  width: 50%;
+  display: flex;
+  text-align: center;
+  margin: 1rem 0;
+}
+.main-options .options-article h4 {
+  font-weight: 100;
+  margin: 1.5rem 0;
+  font-size: 1.3rem;
+}
+.main-options .options-article p {
+  margin: 1rem 0;
+}
+.main-options a {
+  background-color: #3d4246;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 1%;
+  letter-spacing: 2px;
+  width: 30%;
+  text-align: center;
+  border: 1px solid;
+}
+.main-options a:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid;
+}
+.main .image-section {
+  margin: 5% 0;
+}
+.main .image-section img {
+  width: 100%;
+  display: block;
+}
+.main .image-section p {
+  margin: 3% 0;
+}
+
+footer {
+  height: 15vh;
+  background-color: #f5f5f5;
+}
+footer nav ul {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  height: 15vh;
+  margin-left: 15%;
+  list-style: none;
+}
+footer nav ul li a {
+  text-decoration: none;
+  color: unset;
+}
+footer nav ul li a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,12 @@
+@mixin flex-JC-C-AI-C {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin flex{
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}

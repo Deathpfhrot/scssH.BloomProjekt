@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@import "_general.scss";
+@import "_mixin.scss";
+@import "_variables.scss";
+
+// Farben: #3d4246 #f5f5f5 #000 #fff
+
+// Schriften: Open Sans, Libre Caslon Display
+
+
+// font-family: 'Libre Caslon Display', serif;
+// font-family: 'Open Sans', sans-serif;
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgb(214, 212, 212);
+    height: 15vh;
+
+    h1{
+        font-family: 'Libre Caslon Display', serif;
+        margin: 0.5rem 0;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        gap: 6rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 100;
+        margin: 0.5rem 0;
+
+        li:nth-of-type(3){
+            border-bottom: 1px solid;
+        }
+
+        a{
+            text-decoration: none;
+            color: unset;
+        }
+    }
+    
+}
+
+
+.main{
+    margin: 0 10%;
+    
+    &-subscriptions{
+        @include flex-JC-C-AI-C();
+        h2{
+            margin: 1rem 0;
+            font-size: $medium;
+            font-weight: 100;
+        }
+        p{
+            text-align: center;
+            width: 60%;
+        }
+    }
+
+    &-options{
+        @include flex-JC-C-AI-C;
+        h3{
+            font-size: $medium;
+            margin: $spaceDownUp;
+        }
+        .options-article{
+            width: 50%;
+            display: flex;
+            text-align: center;
+            margin: $spaceDownUp;
+
+            h4{
+                font-weight: 100;
+                margin: 1.5rem 0;
+                font-size: 1.3rem;
+            }
+
+            p{
+                margin: $spaceDownUp;
+            }
+
+        }
+
+        a{
+            background-color: $gray-background;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 1%;
+            letter-spacing: 2px;
+            width: 30%;
+            text-align: center;
+            border: 1px solid;
+
+            &:hover{
+                background-color: #fff;
+                color: #000;
+                border: 1px solid;
+            }
+        }
+    }
+
+    .image-section{
+        margin: 5% 0;
+
+        img{
+            width: 100%;
+            display: block;
+        }
+        p{
+            margin: 3% 0;
+        }
+    }
+}
+
+footer{
+    height: 15vh;
+    background-color: $footer-background;
+    
+    nav ul{
+        @include flex();
+        height: 15vh;
+        margin-left: 15%;
+        list-style: none;
+
+        li a{
+            text-decoration: none;
+            color: unset;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+}
+
